@@ -1,0 +1,43 @@
+<!-- Tells the browser that this is HTML 5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashback - Photo Stats</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/exif-js"></script> <!-- EXIF.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.3/dist/heic2any.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>2024 Flashback</h1>
+      <p>Your year in photos.</p>
+    </header>
+
+    <main>
+      <section id="upload-section">
+        <h2>Upload Your Photos</h2>
+        <input type="file" id="photoInput" multiple accept="image/jpeg, image/png, image/heic, image/heif">
+        <button id="uploadBtn">Upload Photos</button>
+      </section>
+
+      <section id="stats-section">
+        <h2>Your Stats</h2>
+        <div id="stats">
+          <p><strong>Photos taken in the last year:</strong> <span id="photoCount">0</span></p>
+          <p><strong>Most visited location:</strong> <span id="popularLocation">Unknown</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Flashback © 2024</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
