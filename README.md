@@ -1,1 +1,1 @@
-Personal project: Your 2024 in photos.
+# Personal project: Your 2024 in photos.
